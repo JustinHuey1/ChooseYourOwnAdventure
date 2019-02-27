@@ -54,7 +54,7 @@ var game = {
                 
                 {
                     text: "You get spooked and decide to go back to your spaceship",
-                    nextLeveL: "Capture",
+                    nextLevel: "Capture",
                 }
             ]
         },
@@ -79,11 +79,15 @@ var game = {
                     text: "",
                     nextLevel: "",
                 },
+                {
+                    text: "",
+                    nextLevel: "",
+                },
             ]
         },
         
         Sun: {
-            background_image: "",
+            background_image: "fire.gif",
             music: "",
             message: "What did you think was going to happen...",
             choices: [
@@ -101,7 +105,7 @@ var game = {
             choices:
                 {
                     text: "Start Over",
-                    nextLeveL: "start",
+                    nextLevel: "start",
                 },
             }
         }   
