@@ -2,7 +2,7 @@
 
 var game = {
     music: "98_Lost_Mine.mp3",
-    background_image: "intro-bg.jpg",
+    background_image: "seahorse.jpg",
     levels: {
 
         start: {
@@ -26,7 +26,7 @@ var game = {
         },
 
         Mars: {
-            background_image: "fire.gif",
+            background_image: "Alien.jpg",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
             message: "You spot an alien.",
             choices: [
@@ -43,7 +43,7 @@ var game = {
         },
         
         Greet: {
-            background_image: "",
+            background_image: "House.jpg",
             music: "",
             message: "Surprisingly, the alien can speak your language and welcomes you with open arms",
             choices: [
@@ -60,14 +60,15 @@ var game = {
         },
         
         Capture: {
-            background_image: "",
+            background_image: "Spaceship.jpg",
             music: "",
-            message: "",
-            choices: 
+            message: "Another alien comes up behind you and captures you",
+            choices: [
                 {
-                    text: "Another alien comes up behind you and captures you",
+                    text: "RIP",
                     nextLevel: "Game_Over",
                 }
+            ]
         },
         
         Moon: {
@@ -87,27 +88,27 @@ var game = {
         },
         
         Sun: {
-            background_image: "fire.gif",
+            background_image: "FIRE.gif",
             music: "",
             message: "What did you think was going to happen...",
             choices: [
                 {
-                    text: "You burn into a flame of fire",
+                    text: "You burn in a flame of fire",
                     nextLevel: "Game_Over",
                 },
             ]
         },
         
         Game_Over: {
-            background_image: "",
+            background_image: "Died.gif",
             music: "",
             message: "It is doomed",
-            choices:
+            choices: [
                 {
                     text: "Start Over",
                     nextLevel: "start",
                 },
-            }
+            ]
         }   
-    
+    }
 };
