@@ -12,11 +12,6 @@ var game = {
                     text: "Travel to Mars",
                     nextLevel: "Mars",
                 },
-
-                {
-                    text: "Travel to the moon",
-                    nextLevel: "Moon",
-                },
                 
                 {
                     text: "Travel to the sun",
@@ -27,7 +22,7 @@ var game = {
 
         Mars: {
             background_image: "Alien.jpg",
-            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            music: "",
             message: "You spot an alien.",
             choices: [
                 {
@@ -59,8 +54,49 @@ var game = {
             ]
         },
         
+        Household: {
+            background_image: "GroupOfAliens.jpg",
+            music: "",
+            message: "You meet more indivisuals of the alien kind",
+            choices: [
+                {
+                    text: "Announce yourself as the king",
+                    nextLevel: "King",
+                },
+                
+                {
+                    text: "Bring an alien back to earth",
+                    nextLevel: "Earth",
+                }
+            ]
+        },
+        
+        King: {
+            background_image: "King.jpg",
+            music: "",
+            message: "You have become the king of the aliens",
+            choices: [
+                {
+                    text: "Poggers",
+                    nextLevel: "Win",
+                }
+            ]
+        },
+        
+        Earth: {
+            background_image: "Hero.jpg",
+            music: "",
+            message: "You have become a scientific hero on earth",
+            choices: [
+                {
+                    text: "Poggers",
+                    nextLevel: "Win",
+                }
+            ]
+        },
+        
         Capture: {
-            background_image: "Spaceship.jpg",
+            background_image: "Scary.webp",
             music: "",
             message: "Another alien comes up behind you and captures you",
             choices: [
@@ -68,22 +104,6 @@ var game = {
                     text: "RIP",
                     nextLevel: "Game_Over",
                 }
-            ]
-        },
-        
-        Moon: {
-            background_image: "",
-            music: "",
-            message: "",
-            choices: [
-                {
-                    text: "",
-                    nextLevel: "",
-                },
-                {
-                    text: "",
-                    nextLevel: "",
-                },
             ]
         },
         
@@ -109,6 +129,19 @@ var game = {
                     nextLevel: "start",
                 },
             ]
-        }   
+        },   
+        
+        Win: {
+            background_image: "Win.gif",
+            music: "",
+            message: "You win.... I guess......",
+            choices: [
+                {
+                    text: "Start over",
+                    nextLevel: "start",
+                }
+            ]
+        }
     }
 };
+
